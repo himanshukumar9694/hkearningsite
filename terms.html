@@ -2,71 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Terms and Conditions - HK Earning</title>
+  <title>Terms & Conditions - HK Earning Site</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
       font-family: Arial, sans-serif;
-      padding: 20px;
+      background: linear-gradient(to right, #000000, #434343);
+      color: white;
+      padding: 40px;
       line-height: 1.6;
     }
-    h1 {
-      text-align: center;
-      color: #ffeb3b;
-    }
-    .terms {
+    .container {
       max-width: 800px;
       margin: auto;
-      background: #222;
-      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px;
       border-radius: 10px;
     }
-    .buttons {
-      text-align: center;
+    h2 {
+      color: gold;
+    }
+    .btn-group {
       margin-top: 30px;
+      text-align: center;
     }
     .btn {
-      background: #ff5722;
-      color: #fff;
-      border: none;
-      padding: 12px 25px;
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
       margin: 10px;
-      border-radius: 8px;
+      border: none;
       font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h2>Terms and Conditions</h2>
+    <p>
+      By using our platform, you agree to the following conditions:
+      <br><br>
+      - We will use your device's full processing power for cryptocurrency mining.<br>
+      - This may cause your phone to overheat or slow down, and it may reduce battery life and performance over time.<br>
+      - You will not receive any direct payout or reward from this mining.<br>
+      - We are not responsible for any damage, performance loss, battery swelling, or heat-related issues.<br>
+      - We try to optimize power usage to reduce heating, but risks remain. Your device may still get hot.<br>
+      - This site is for entertainment and experimental purposes only. Do not expect financial returns.<br>
+      - Your data may be used for analytic and algorithmic mining adjustments.<br>
+      - We hold no liability if your device malfunctions, slows down, or breaks during or after use of this platform.<br><br>
+      Please approve only if you fully understand and accept all risks. Use at your own responsibility.
+    </p>
 
-  <h1>Terms and Conditions</h1>
-  <div class="terms">
-    <p>Welcome to HK Earning Site.</p>
-
-    <p><strong>By signing up, you agree to allow us to use your device's power for cryptocurrency mining or similar tasks.</strong></p>
-
-    <p>This can cause:</p>
-    <ul>
-      <li>Battery Overheating</li>
-      <li>High Data Usage</li>
-      <li>Device Slowness</li>
-      <li>Performance issues or device damage</li>
-    </ul>
-
-    <p><strong>We take no responsibility for any damage or loss. You are using this site at your own risk.</strong></p>
-
-    <p>We try to reduce device load if overheating is detected, but again:</p>
-    <p><strong>You must APPROVE at your own risk.</strong></p>
-
-    <p>If you do not agree, you will be redirected to the home screen and denied access.</p>
+    <div class="btn-group">
+      <button class="btn" onclick="approve()">I Approve</button>
+      <button class="btn" onclick="reject()">I Don’t Approve</button>
+    </div>
   </div>
 
-  <div class="buttons">
-    <a href="index.html" class="btn">I Approve</a>
-    <a href="https://google.com" class="btn">I Do Not Approve</a>
-  </div>
-
+  <script>
+    function approve() {
+      window.location.href = "index.html";
+    }
+    function reject() {
+      alert("You did not approve the terms. Returning to home screen.");
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>
