@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - HK Earning</title>
+  <style>
+    body {
+      background-image: url('https://i.ibb.co/kHBP9pw/bugatti-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #ffc107;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .checkbox {
+      margin: 15px 0;
+    }
+
+    .submit-btn {
+      background-color: #ff5722;
+      color: white;
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sign Up for HK Earning</h1>
+
+  <form action="terms.html">
+    <input type="text" placeholder="First Name" required><br>
+    <input type="text" placeholder="Last Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <input type="password" placeholder="Password" required><br>
+    <input type="password" placeholder="Re-enter Password" required><br>
+    <div style="background:#222;padding:10px;margin:10px 0;">CAPTCHA: 5 + 4 = ?</div>
+    <input type="text" placeholder="Answer CAPTCHA" required><br>
+    <div class="checkbox">
+      <label><input type="checkbox" required> I am over 18+ and agree to continue</label>
+    </div>
+    <input type="submit" class="submit-btn" value="Sign Up">
+  </form>
+
+</body>
+</html>
