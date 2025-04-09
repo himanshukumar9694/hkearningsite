@@ -5,52 +5,80 @@
   <title>Login - HK Earning Site</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: url('https://images.unsplash.com/photo-1606813904192-3fbb3a5be0af?auto=format&fit=crop&w=1000&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
-    .container {
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 300px;
-      margin: 100px auto;
-      padding: 20px;
+
+    .login-box {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px;
       border-radius: 10px;
-      color: white;
-      text-align: center;
-    }
-    input {
+      box-shadow: 0 0 15px gold;
       width: 90%;
-      padding: 10px;
+      max-width: 400px;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
       margin: 10px 0;
       border: none;
       border-radius: 5px;
+      background: #eee;
     }
+
     button {
-      background: #ff5722;
-      color: white;
-      padding: 10px 20px;
+      width: 100%;
+      padding: 12px;
+      background: gold;
+      color: black;
       border: none;
       border-radius: 5px;
-      cursor: pointer;
       font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
     }
-    h2 {
-      margin-bottom: 20px;
+
+    button:hover {
+      background-color: #ffcc00;
     }
   </style>
 </head>
 <body>
-
-  <div class="container">
-    <h2>Login to Start Earning</h2>
-    <form action="index.html">
-      <input type="email" placeholder="Email" required><br>
-      <input type="password" placeholder="Password" required><br>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="loginUser(event)">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
       <button type="submit">Login</button>
     </form>
   </div>
 
+  <script>
+    function loginUser(e) {
+      e.preventDefault();
+      // Simulate login check
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      if (email && password) {
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid credentials");
+      }
+    }
+  </script>
 </body>
 </html>
