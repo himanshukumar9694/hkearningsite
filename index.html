@@ -1,55 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>HK EARNING SITE</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: white;
-      text-align: center;
-    }
-    .banner {
-      padding: 30px;
-      background-color: #111;
-    }
-    h1 {
-      font-size: 32px;
-      margin: 0;
-    }
-    .btn {
-      padding: 15px 30px;
-      background: #ff8800;
-      color: white;
-      font-size: 18px;
-      text-decoration: none;
-      margin: 20px;
-      border-radius: 8px;
-      display: inline-block;
-    }
-    .text {
-      margin: 40px auto;
-      width: 80%;
-      line-height: 1.6;
-    }
-  </style>
+    <title>HK EARNING SITE - EARN REDEEM CODE</title>
+    <style>
+        /* DARK THEME WITH RED ACCENTS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        /* ANIMATED BACKGROUND STORY */
+        #story-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+            overflow: hidden;
+        }
+        
+        .story-frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            animation: storyAnimation 60s linear infinite;
+            opacity: 0;
+        }
+        
+        @keyframes storyAnimation {
+            0% { opacity: 1; background-image: url('https://i.imgur.com/poor-man-road.jpg'); }
+            20% { opacity: 1; background-image: url('https://i.imgur.com/finds-phone.jpg'); }
+            40% { opacity: 1; background-image: url('https://i.imgur.com/working-site.jpg'); }
+            60% { opacity: 1; background-image: url('https://i.imgur.com/notification-25dollar.jpg'); }
+            80% { opacity: 1; background-image: url('https://i.imgur.com/billionaire-life.jpg'); }
+            100% { opacity: 1; }
+        }
+        
+        /* MAIN CONTENT */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+        }
+        
+        h1 {
+            color: #ff3333;
+            text-shadow: 0 0 10px #ff0000;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        
+        .start-btn {
+            background: #ff3333;
+            color: black;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 30px 0;
+            box-shadow: 0 0 20px #ff0000;
+            transition: all 0.3s;
+        }
+        
+        /* NEW REDEEM CODE SECTION */
+        .redeem-generator {
+            background: rgba(255,50,50,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border: 2px dashed #ff3333;
+        }
+        
+        .redeem-title {
+            font-size: 3em;
+            color: #ffcc00;
+            text-shadow: 0 0 15px #ff9900;
+            margin: 10px 0;
+        }
+        
+        /* APP STORE STYLE SECTION */
+        .app-stores {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .app-card {
+            background: rgba(30,30,30,0.8);
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            background: #333;
+            border-radius: 20px;
+        }
+        
+        /* CONTENT BLOCKS */
+        .content-block {
+            margin: 50px 0;
+            padding: 30px;
+            background: rgba(30,30,30,0.7);
+            border-radius: 10px;
+            border-left: 5px solid #ff3333;
+        }
+        
+        .content-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(255,50,50,0.5);
+        }
+        
+        .tournament-highlight {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
+    <!-- ANIMATED BACKGROUND STORY -->
+    <div id="story-animation">
+        <div class="story-frame"></div>
+    </div>
+    
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <img src="https://i.imgur.com/red-monster-logo.png" alt="HK Logo" class="logo">
+        
+        <h1>HK EARNING SITE - EARN REDEEM CODE</h1>
+        <button class="start-btn">Start Earning</button>
+        
+        <!-- NEW REDEEM CODE GENERATOR SECTION -->
+        <div class="redeem-generator">
+            <div class="redeem-title">REDEEM</div>
+            <div class="redeem-title">CODE</div>
+            <div class="redeem-title">GENERATOR</div>
+            <p>Generate unlimited redeem codes for Free Fire, Paytm, and more!</p>
+            <button class="start-btn" style="background:#ffcc00;color:#000;">Generate Now</button>
+        </div>
+        
+        <!-- APP STORES SECTION -->
+        <div class="app-stores">
+            <div class="app-card">
+                <div class="app-icon"></div>
+                <h3>APP'S</h3>
+                <p>Premium apps for free</p>
+            </div>
+            <div class="app-card">
+                <div class="app-icon"></div>
+                <h3>JOKOS</h3>
+                <p>Funny videos & memes</p>
+            </div>
+            <div class="app-card">
+                <div class="app-icon"></div>
+                <h3>MUSICAL FLAKES</h3>
+                <p>Latest songs unlocked</p>
+            </div>
+            <div class="app-card">
+                <div class="app-icon"></div>
+                <h3>LINDER EMOTIONALS</h3>
+                <p>Dating app premium</p>
+            </div>
+        </div>
+        
+        <!-- ORIGINAL CONTENT BLOCKS -->
+        <div class="content-block">
+            <img src="https://i.imgur.com/redeem-code-image1.jpg" alt="Redeem Codes" class="content-img">
+            <h2>Welcome to the #1 Redeem Code Earning Site</h2>
+            <p>Find your phone, visit our site, and start earning. Become rich, buy jets, cars, and even Rolls Royce.</p>
+            <p class="tournament-highlight">Free Fire Tournament Rewards Every Week!</p>
+        </div>
+        
+        <div class="content-block">
+            <img src="https://i.imgur.com/earning-proof.jpg" alt="Earning Proof" class="content-img">
+            <h2>Work Hard, Play Smart</h2>
+            <p>We bring Free Fire vibes, top-tier rewards, and the hustle life you want.</p>
+            <p>Earn maximum here with our special tournaments and daily challenges.</p>
+        </div>
+        
+        <div class="content-block">
+            <img src="https://i.imgur.com/rich-lifestyle.jpg" alt="Rich Lifestyle" class="content-img">
+            <h2>From Zero to Hero</h2>
+            <p>Join thousands who transformed their lives through our platform.</p>
+            <p class="tournament-highlight">Special bonus for new users!</p>
+        </div>
+        
+        <!-- FINAL CTA -->
+        <div class="content-block">
+            <h2>So what are you waiting for?</h2>
+            <p>Join now and experience the ride.</p>
+            <button class="start-btn">Get Started Now</button>
+        </div>
+    </div>
 
-  <div class="banner">
-    <h1>HK EARNING SITE - EARN REDEEM CODE</h1>
-    <a href="signup.html" class="btn">Start Earning</a>
-  </div>
-
-  <div class="text">
-    <p>Welcome to the #1 redeem code earning site. Find your phone, visit our site, and start earning. Become rich, buy jets, cars, and even Rolls Royce. We help you mine through your phone, you earn rewards and redeem codes...</p>
-    <p>Work hard, play smart. We bring Free Fire vibes, top-tier rewards, and the hustle life you want. So what are you waiting for?</p>
-    <p>Join now and experience the ride.</p>
-    <img src="https://i.imgur.com/BJZBIFD.jpg" width="80%">
-  </div>
-
+    <script>
+        // Simple animation starter
+        document.querySelectorAll('.start-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Redirecting to signup page...');
+                // window.location.href = "auth.html";
+            });
+        });
+    </script>
 </body>
 </html>
